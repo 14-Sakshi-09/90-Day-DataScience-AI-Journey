@@ -43,3 +43,43 @@ LIMIT 5;
 
 ## Proper Sequence
    [SELECT → FROM → WHERE → ORDER BY → LIMIT]
+
+# SQL Practice
+
+## Topics Covered
+
+### Query 1
+- Basic SELECT and Filtering
+
+### Query 2
+**Top 3 Customers by Total Tickets Raised**
+- INNER JOIN
+- COUNT()
+- GROUP BY
+- ORDER BY
+- LIMIT
+
+### Query 3
+**List All Delivered Orders**
+- WHERE
+- ORDER BY
+
+### Query 4
+**Count Orders by Status**
+- COUNT()
+- GROUP BY
+- ORDER BY
+
+## Key Concepts Practiced
+
+- SELECT
+- WHERE
+- INNER JOIN
+- GROUP BY
+- ORDER BY
+- COUNT()
+- LIMIT
+
+## Status
+
+✅ Completed
