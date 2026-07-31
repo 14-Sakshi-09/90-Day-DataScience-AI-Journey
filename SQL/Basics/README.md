@@ -83,3 +83,35 @@ LIMIT 5;
 ## Status
 
 ✅ Completed
+
+SQL execution order:
+FROM
+↓
+JOIN
+↓
+WHERE
+↓
+GROUP BY
+↓
+SUM()/COUNT()/AVG()
+↓
+ORDER BY
+↓
+LIMIT
+
+##Filtering happens before aggregation.
+
+### Query 5
+**Top 3 Restaurants by Total Revenue**
+
+**Concepts Practiced**
+- INNER JOIN
+- WHERE
+- SUM() Aggregate Function
+- GROUP BY
+- ORDER BY DESC
+- LIMIT
+
+**Key Learning**
+- Aggregate functions like `SUM()` require `GROUP BY` when returning non-aggregated columns.
+- Always filter records (`WHERE status = 'delivered'`) **before** aggregation to ensure accurate results.
