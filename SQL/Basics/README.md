@@ -115,3 +115,22 @@ LIMIT
 **Key Learning**
 - Aggregate functions like `SUM()` require `GROUP BY` when returning non-aggregated columns.
 - Always filter records (`WHERE status = 'delivered'`) **before** aggregation to ensure accurate results.
+
+### Query 6
+**Customers Who Have Never Cancelled an Order**
+
+**Concepts Practiced**
+- INNER JOIN
+- NOT IN
+- Subquery
+- DISTINCT
+- WHERE
+- COUNT()
+- GROUP BY
+- ORDER BY
+
+**Key Learning**
+- `NOT IN` with a subquery is used to exclude specific records.
+- `DISTINCT` removes duplicate values in the subquery.
+- `COUNT()` with `GROUP BY` calculates the total number of orders for each customer.
+- `ORDER BY` can sort by multiple columns with different sorting directions.
