@@ -134,3 +134,9 @@ LIMIT
 - `DISTINCT` removes duplicate values in the subquery.
 - `COUNT()` with `GROUP BY` calculates the total number of orders for each customer.
 - `ORDER BY` can sort by multiple columns with different sorting directions.
+
+### Query 7
+
+Concepts Practiced:**
+- `WHERE ... IS NULL` — filtering rows with no value in a column
+- `ORDER BY` with multiple columns
