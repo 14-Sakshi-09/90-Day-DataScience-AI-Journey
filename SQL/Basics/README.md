@@ -140,3 +140,17 @@ LIMIT
 Concepts Practiced:**
 - `WHERE ... IS NULL` — filtering rows with no value in a column
 - `ORDER BY` with multiple columns
+
+### Query 9
+
+### 🗓️ DailySQL #14 – Average Salary by Department
+
+**Concepts Learned:**
+- `GROUP BY` to aggregate data by department
+- `COUNT(*)` to count employees in each group
+- `AVG()` with `ROUND()` for formatted average values
+- `HAVING` to filter groups based on aggregate conditions
+- `ORDER BY` to sort aggregated results
+
+**Key Takeaway:**  
+Use `HAVING` to filter grouped data after aggregation, whereas `WHERE` filters rows before grouping.
