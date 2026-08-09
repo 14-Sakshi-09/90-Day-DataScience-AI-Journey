@@ -154,3 +154,9 @@ Concepts Practiced:**
 
 **Key Takeaway:**  
 Use `HAVING` to filter grouped data after aggregation, whereas `WHERE` filters rows before grouping.
+
+
+###Query 13
+
+- Combined `COUNT()` and `SUM()` in a single aggregate query
+- Used `HAVING` with a count-based condition (`HAVING COUNT(...) > 2`) instead of sum/average — first time filtering groups by frequency rather than total value
