@@ -160,3 +160,13 @@ Use `HAVING` to filter grouped data after aggregation, whereas `WHERE` filters r
 
 - Combined `COUNT()` and `SUM()` in a single aggregate query
 - Used `HAVING` with a count-based condition (`HAVING COUNT(...) > 2`) instead of sum/average — first time filtering groups by frequency rather than total value
+
+###Query 14
+-What I Learned
+JOIN to combine customer and order data
+GROUP BY with multiple columns
+SUM() for total spending
+HAVING to filter aggregated results
+ORDER BY DESC for highest spending first
+
+Key Takeaway: WHERE filters rows, while HAVING filters groups after aggregation.
