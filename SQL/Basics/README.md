@@ -156,12 +156,12 @@ Concepts Practiced:**
 Use `HAVING` to filter grouped data after aggregation, whereas `WHERE` filters rows before grouping.
 
 
-###Query 13
+### Query 13
 
 - Combined `COUNT()` and `SUM()` in a single aggregate query
 - Used `HAVING` with a count-based condition (`HAVING COUNT(...) > 2`) instead of sum/average — first time filtering groups by frequency rather than total value
 
-###Query 14
+### Query 14
 -What I Learned
 JOIN to combine customer and order data
 GROUP BY with multiple columns
@@ -170,3 +170,18 @@ HAVING to filter aggregated results
 ORDER BY DESC for highest spending first
 
 Key Takeaway: WHERE filters rows, while HAVING filters groups after aggregation.
+
+### Query 16
+
+
+### 🗓️ DailySQL #15 – Top Passengers by Space Travel Destination
+
+**What I Learned**
+- Used `SUM()` to calculate total seats booked for each destination
+- Used `AVG()` with `ROUND()` to calculate and format the average ticket price
+- Applied `GROUP BY` to create destination-wise groups
+- Used `HAVING COUNT(booking_id) > 2` to filter destinations based on the number of bookings
+- Used `ORDER BY ... DESC` to display destinations with the highest bookings first
+
+**Key Takeaway:**  
+`HAVING` can filter grouped results using aggregate conditions such as `COUNT()`, `SUM()`, and `AVG()`. Unlike `WHERE`, it works **after grouping and aggregation**.
