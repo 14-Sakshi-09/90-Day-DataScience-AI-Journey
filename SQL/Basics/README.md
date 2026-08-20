@@ -185,3 +185,17 @@ Key Takeaway: WHERE filters rows, while HAVING filters groups after aggregation.
 
 **Key Takeaway:**  
 `HAVING` can filter grouped results using aggregate conditions such as `COUNT()`, `SUM()`, and `AVG()`. Unlike `WHERE`, it works **after grouping and aggregation**.
+
+### Query 17
+
+### 🗓️ DailySQL #16 – Customers Who Placed Orders on Consecutive Days
+
+**What I Learned**
+- Used a **self JOIN** to compare rows within the same `orders` table
+- Joined the table using `customer_id` to compare orders placed by the same customer
+- Used `INTERVAL '1 day'` to identify orders placed exactly one day apart
+- Joined the `customers` table to retrieve customer names
+- Used table aliases (`o1` and `o2`) to work with multiple instances of the same table
+
+**Key Takeaway:**  
+A **self JOIN** is useful when we need to compare different rows within the same table. Here, it helped identify customers who placed orders on two consecutive days.

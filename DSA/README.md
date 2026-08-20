@@ -34,3 +34,17 @@ For sorted array problems involving a target pair, the **Two Pointer approach** 
 **Complexity:** `O(n)` time, `O(1)` extra space
 
 ⭐ **Milestone:** First DSA problem solved independently in C++ without AI assistance.
+
+**DSA:(Sqrt(x))**
+
+### What I Learned
+- Applied **Binary Search** to find the square root of a number without using built-in functions
+- Used `left`, `right`, and `mid` pointers to search for the answer efficiently
+- Stored the last valid `mid` value as the potential answer
+- If `mid <= x / mid`, `mid` is a valid candidate, so searched on the right for a larger possible value
+- Used `x / mid` instead of `mid * mid` to avoid integer overflow
+
+**Key Takeaway:**  
+Binary Search is not limited to searching for an element in an array — it can also be used to find the maximum or minimum value that satisfies a condition.
+
+**Complexity:** `O(log n)` time, `O(1)` extra space
