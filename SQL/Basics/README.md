@@ -199,3 +199,17 @@ Key Takeaway: WHERE filters rows, while HAVING filters groups after aggregation.
 
 **Key Takeaway:**  
 A **self JOIN** is useful when we need to compare different rows within the same table. Here, it helped identify customers who placed orders on two consecutive days.
+
+### Query 18
+
+### 🗓️ DailySQL #17 – Students Scoring Above Class Average
+
+**What I Learned**
+- Used a **subquery** to calculate the average score of all students
+- Used `AVG()` inside the subquery
+- Compared each student's score with the calculated class average
+- Used `WHERE` to filter students whose score was greater than the average
+- Used `ORDER BY DESC` to display higher scores first
+
+**Key Takeaway:**  
+A subquery can be used when the result of one query is needed as a condition in another query. Here, the average score calculated by the inner query was used to filter students in the outer query.

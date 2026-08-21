@@ -48,3 +48,33 @@ For sorted array problems involving a target pair, the **Two Pointer approach** 
 Binary Search is not limited to searching for an element in an array — it can also be used to find the maximum or minimum value that satisfies a condition.
 
 **Complexity:** `O(log n)` time, `O(1)` extra space
+
+**DSA:(Remove Duplicates from Sorted Array)**
+
+### What I Learned
+- Applied the **Two Pointer technique** to modify a sorted array in-place
+- Used one pointer to track the position of the next unique element
+- Used another pointer to traverse the array
+- Skipped duplicate elements and placed unique elements at the correct position
+- Returned the count of unique elements
+
+**Key Takeaway:**  
+In a sorted array, duplicates can be identified by comparing the current element with the previous or last unique element. The Two Pointer technique helps solve this efficiently without using extra space.
+
+**Complexity:** `O(n)` time, `O(1)` extra space
+
+
+**DSA:(Merge Sorted Array)**
+
+### What I Learned
+- Practiced merging two sorted arrays using the **Two Pointer technique**
+- Compared elements from both arrays and placed the smaller element into the result
+- Handled the remaining elements after one array was fully traversed
+- Updated the original array with the merged result
+
+**Key Takeaway:**  
+When two arrays are already sorted, comparing elements using two pointers allows us to merge them efficiently in linear time.
+
+**Complexity:** `O(m + n)` time, `O(m + n)` extra space
+
+⭐ **Milestone:** Solved both problems by first learning and understanding the approach, then implementing them independently in C++ without AI assistance.
