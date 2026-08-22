@@ -213,3 +213,17 @@ A **self JOIN** is useful when we need to compare different rows within the same
 
 **Key Takeaway:**  
 A subquery can be used when the result of one query is needed as a condition in another query. Here, the average score calculated by the inner query was used to filter students in the outer query.
+
+### Query 19
+
+### 🗓️ DailySQL #19 – Most Booked Room
+
+**What I Learned**
+- Used `COUNT(*)` with `GROUP BY` to calculate how many times each room was booked
+- Used a subquery to find the maximum booking count
+- Used `MAX()` on the grouped booking counts
+- Applied `HAVING` to return only the room(s) with the highest number of bookings
+- Learned how nested aggregation can be handled using a subquery
+
+**Key Takeaway:**  
+When we need to compare aggregated results with the maximum or minimum aggregate value, a **subquery** can first calculate that value and the outer query can use it for filtering. `HAVING` is used because the filtering condition involves an aggregate result.

@@ -78,3 +78,18 @@ When two arrays are already sorted, comparing elements using two pointers allows
 **Complexity:** `O(m + n)` time, `O(m + n)` extra space
 
 ⭐ **Milestone:** Solved both problems by first learning and understanding the approach, then implementing them independently in C++ without AI assistance.
+
+
+**DSA:(Check Divisibility by Digit Sum and Product)**
+
+### What I Learned
+- Extracted individual digits using the `% 10` operator
+- Removed the last digit using `/= 10`
+- Calculated both the **sum** and **product** of all digits
+- Stored the original number in a temporary variable to preserve its value
+- Checked divisibility using the modulo `%` operator
+
+**Key Takeaway:**  
+For digit-based problems, `% 10` helps extract the last digit, while `/ 10` removes it. Using a temporary variable allows us to process the digits without modifying the original number.
+
+**Complexity:** `O(log₁₀ n)` time, `O(1)` extra space
