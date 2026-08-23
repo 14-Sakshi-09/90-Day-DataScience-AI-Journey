@@ -227,3 +227,22 @@ A subquery can be used when the result of one query is needed as a condition in 
 
 **Key Takeaway:**  
 When we need to compare aggregated results with the maximum or minimum aggregate value, a **subquery** can first calculate that value and the outer query can use it for filtering. `HAVING` is used because the filtering condition involves an aggregate result.
+
+### Query 20
+**Products Never Ordered**
+
+**Concepts Practiced:**
+- `NOT IN`
+- Subquery
+- `DISTINCT`
+- `WHERE`
+- `ORDER BY`
+
+**Key Learning:**
+- Used a subquery to find product IDs that already exist in the `orders` table.
+- Used `NOT IN` to exclude products that have been ordered.
+- Used `DISTINCT` to avoid duplicate product IDs in the subquery.
+- Practiced exclusion-based filtering using a subquery.
+
+**Key Takeaway:**  
+`NOT IN` with a subquery is useful when we need to find records that do **not** exist in another table.

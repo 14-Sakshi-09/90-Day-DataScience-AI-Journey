@@ -93,3 +93,17 @@ When two arrays are already sorted, comparing elements using two pointers allows
 For digit-based problems, `% 10` helps extract the last digit, while `/ 10` removes it. Using a temporary variable allows us to process the digits without modifying the original number.
 
 **Complexity:** `O(log₁₀ n)` time, `O(1)` extra space
+
+## DSA: Climbing Stairs (LeetCode #70)
+
+### What I Learned
+- Recognized the Fibonacci-style Dynamic Programming pattern
+- Used the recurrence: `dp[i] = dp[i-1] + dp[i-2]`
+- Reused previous results instead of recalculating them
+- Optimized DP using only two variables instead of an array
+- Handled small edge cases separately
+
+**Key Takeaway:**  
+When the current state depends on the previous two states, look for a Fibonacci/DP pattern.
+
+**Complexity:** O(n) time, O(1) extra space
