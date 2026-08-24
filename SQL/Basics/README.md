@@ -246,3 +246,24 @@ When we need to compare aggregated results with the maximum or minimum aggregate
 
 **Key Takeaway:**  
 `NOT IN` with a subquery is useful when we need to find records that do **not** exist in another table.
+
+### Query 21
+**Second Most Recent Login per User**
+
+**Concepts Practiced:**
+- `CTE (WITH)`
+- `ROW_NUMBER()`
+- `PARTITION BY`
+- Window Functions
+- `ORDER BY`
+- `WHERE`
+
+**Key Learning:**
+- Used a CTE to organize the query into a separate logical step.
+- Used `ROW_NUMBER()` to assign a rank to each login.
+- `PARTITION BY user_id` restarted the ranking separately for every user.
+- `ORDER BY login_date DESC` ranked the most recent login as `1`.
+- Filtered with `WHERE rn = 2` to get the second most recent login.
+
+**Key Takeaway:**  
+`ROW_NUMBER() OVER (PARTITION BY ... ORDER BY ...)` is useful when we need to rank rows separately within each group.

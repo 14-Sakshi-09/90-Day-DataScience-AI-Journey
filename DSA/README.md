@@ -107,3 +107,17 @@ For digit-based problems, `% 10` helps extract the last digit, while `/ 10` remo
 When the current state depends on the previous two states, look for a Fibonacci/DP pattern.
 
 **Complexity:** O(n) time, O(1) extra space
+
+## DSA: Remove Duplicates from Sorted List (LeetCode #83)
+
+### What I Learned
+- Traversed a linked list using a `current` pointer
+- Compared adjacent nodes to detect duplicates
+- Removed duplicate nodes by updating the `next` pointer
+- Used `delete` to free memory of removed nodes in C++
+- Handled the empty-list edge case
+
+**Key Takeaway:**  
+Since the linked list is sorted, duplicate values are adjacent, so we can remove them using a single traversal.
+
+**Complexity:** O(n) time, O(1) extra space
