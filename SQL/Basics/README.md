@@ -267,3 +267,27 @@ When we need to compare aggregated results with the maximum or minimum aggregate
 
 **Key Takeaway:**  
 `ROW_NUMBER() OVER (PARTITION BY ... ORDER BY ...)` is useful when we need to rank rows separately within each group.
+
+## 🟢 DailySQL #56 — Employee Department Details | @Zendesk
+
+### 🧠 Approach
+Used an `INNER JOIN` between the `employees` and `departments` tables using `department_id`.
+
+Selected:
+- `employee_name`
+- `department_name`
+- `location`
+- `salary`
+
+Then sorted the results by:
+1. `department_name` → Ascending
+2. `salary` → Descending
+
+### 🔑 Concepts Practiced
+- `INNER JOIN`
+- Joining tables using a common key
+- `ORDER BY`
+- Multiple-column sorting
+
+### 💡 Key Learning
+`INNER JOIN` returns only the records that have matching values in both tables.

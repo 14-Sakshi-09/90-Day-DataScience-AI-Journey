@@ -121,3 +121,23 @@ When the current state depends on the previous two states, look for a Fibonacci/
 Since the linked list is sorted, duplicate values are adjacent, so we can remove them using a single traversal.
 
 **Complexity:** O(n) time, O(1) extra space
+
+## 🟢 LeetCode #94 — Binary Tree Inorder Traversal
+
+### 🧠 Approach
+Used **recursive traversal**.
+
+For every node:
+1. Traverse the left subtree
+2. Add the current node's value
+3. Traverse the right subtree
+
+### 🔑 Pattern
+**Left → Root → Right**
+
+### ⏱️ Complexity
+- Time: `O(n)`
+- Space: `O(h)` — recursion stack, where `h` is the tree height
+
+### 💡 Key Learning
+Inorder traversal is one of the fundamental binary tree traversal techniques and is especially important for understanding recursive tree problems.
